@@ -1,0 +1,21 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  input {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    box-shadow: 0 0 10px rgba(128, 90, 213, 0.5);
+  }
+  
+  button {
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
