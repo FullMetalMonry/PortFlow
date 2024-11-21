@@ -73,6 +73,7 @@ async function findRecipes() {
 }
 
 // Отображение рецептов
+
 function displayRecipes(recipes) {
   const recipesSection = document.getElementById('recipes');
   if (recipes.length === 0) {
@@ -81,10 +82,13 @@ function displayRecipes(recipes) {
   }
 
   recipesSection.innerHTML = recipes.map(recipe => `
-    <div class="bg-white shadow rounded p-4 mb-4">
-      <h4 class="text-lg font-bold">${recipe.strMeal}</h4>
-      <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" class="w-full h-48 object-cover rounded mb-2">
-      <a href="https://www.themealdb.com/meal.php?c=${recipe.idMeal}" target="_blank" class="text-purple-600 hover:underline">View Recipe</a>
+    <div class="recipe-card bg-white shadow-lg rounded-lg overflow-hidden w-72 md:w-80 lg:w-96 mx-auto mb-6">
+      <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" class="w-full h-48 object-cover object-center">
+      <div class="p-4">
+        <h4 class="text-lg font-semibold text-gray-900">${recipe.strMeal}</h4>
+        <a href="https://www.themealdb.com/meal.php?c=${recipe.idMeal}" target="_blank" class="text-purple-600 hover:underline text-sm">View Recipe</a>
+      </div>
     </div>
   `).join('');
 }
+
