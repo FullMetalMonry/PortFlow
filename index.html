@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&display=swap" rel="stylesheet">
   <title>Recipe Finder</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/302ad94fc2.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
   <!-- Header -->
-  <header class="bg-purple-600 text-white shadow">
+  <header class="bg-green-500 text-white shadow">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Recipe Finder</h1>
+      <h1 class="font-fredoka text-2xl">Recipe Finder</h1>
+      <h1 class="font-fredoka text-3xl text-center">Search And Cook!</h1>
       <nav>
         <ul class="flex space-x-6">
-          <li><a href="#" class="hover:text-gray-200">Home</a></li>
-          <li><a href="#about" class="hover:text-gray-200">About</a></li>
-          <li><a href="#recipes" class="hover:text-gray-200">Recipes</a></li>
-        </ul>
+        <li><a href="index.html" title="Home" class="hover:text-gray-200"><i class="fa-solid fa-house-chimney" ></a></i></li>
+        <li><a href="about.html" title="About" class="hover:text-gray-200"><i class="fa-solid fa-address-card"></i></a></i></li>
+        <li><a href="recipes.html" title="Recipes" class="hover:text-gray-200"><i class="fa-solid fa-utensils"></i></a></li>
+      </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-purple-500 text-white py-20">
+  <section class="bg-green-400 text-white py-20">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-4">Find Recipes with What You Have!</h2>
-      <p class="mb-6 text-lg">Input your ingredients and discover delicious recipes you can cook right now.</p>
-      <a href="#add-products" class="bg-white text-purple-600 px-6 py-3 rounded-md shadow hover:bg-gray-200">Get Started</a>
+      <h2 id="animate" class="font-fredoka text-3xl mb-4">Find Recipes With What You Have!</h2>
+      <p class="mb-6 text-lg font-fredoka ">Input your ingredients and discover delicious recipes you can cook right now.</p>
+      <a href="#add-products" class="bg-white text-green-950 px-6 py-3 rounded-md shadow hover:bg-gray-200">Get Started</a>
     </div>
   </section>
 
@@ -49,27 +52,22 @@
             placeholder="Quantity" 
             class="border border-gray-300 px-4 py-2 rounded w-1/6"
           />
-          <button type="button" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700" onclick="addProduct()">Add</button>
+          <button type="button" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700" onclick="addProduct()">Add</button>
         </div>
         <div id="product-list" class="mt-6 text-left"></div>
-        <button type="button" class="bg-green-500 text-white px-6 py-3 rounded shadow hover:bg-green-600" onclick="findRecipes()">Find Recipes</button>
+        <button type="button" class="bg-green-600 text-white px-6 py-3 rounded shadow hover:bg-green-700" onclick="findRecipes()">Find Recipes</button>
       </form>
     </div>
   </section>
+ 
 
 
   <!-- Рецепты  -->
-<section id="recipes" class="py-20">
+<section id="recipes" class="py-20 ">
     <div class="container mx-auto text-center">
       <h3 class="text-3xl font-bold mb-6">Recipes</h3>
       <p>Here will be your recipes based on selected ingredients.</p>
-
-      
-    </div>
-
-
-
-    
+    </div> 
   </section>
   
 
