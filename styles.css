@@ -20,6 +20,8 @@ body {
   }
 
 
+
+  
 .recipe-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -28,3 +30,44 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+#animate{
+  margin: auto;
+  font-family: monospace;
+  font-size: 30px;
+  border-right: 4px solid white;
+  animation: animateText 7s infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  animation-timing-function: steps(40);
+}
+@keyframes animateText{
+  0%{
+    width: 0;    
+  }
+  50%{
+    width: 32ch;
+  }
+  100%{
+    width: 0;
+  }
+}
+
+
+
+.fa-house-chimney{
+  font-size: 25px;
+  box-shadow: 0 0 10px rgba(128, 90, 213, 0.5);
+  
+}
+.fa-address-card{
+  font-size: 25px;
+  box-shadow: 0 0 10px rgba(128, 90, 213, 0.5);
+}
+.fa-utensils{
+  font-size: 25px;
+  box-shadow: 0 0 10px rgba(128, 90, 213, 0.5);
+}
+
+  
