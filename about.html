@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>About - Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-fredoka">
+  <!-- Header -->
+  <header class="bg-green-500 text-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl">Recipe Finder</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" title="Home" class="hover:text-gray-200"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+          <li><a href="about.html" title="About" class="hover:text-gray-200"><i class="fa-solid fa-address-card"></i> About</a></li>
+          <li><a href="recipes.html" title="Recipes" class="hover:text-gray-200"><i class="fa-solid fa-utensils"></i> Recipes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 id="animate-about" class="text-4xl font-bold mb-6">Welcome to Recipe Finder!</h2>
+      <p class="text-lg text-gray-700 mb-10">
+        Our mission is to help you find the best recipes based on the ingredients you already have. 
+        Cooking has never been easier or more fun!
+      </p>
+      <button onclick="triggerAboutAnimation()" class="bg-green-600 text-white px-6 py-3 rounded-full shadow hover:bg-green-700">
+        Learn More About Us
+      </button>
+    </div>
+  </section>
+
+  <!-- Animated Cards Section -->
+  <section id="about-cards" class="py-20 hidden">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="about-card bg-green-100 p-6 rounded shadow opacity-0 translate-y-10 transition duration-500">
+        <h4 class="text-xl font-bold mb-2">Our Vision</h4>
+        <p class="text-gray-700">To make cooking accessible and enjoyable for everyone.</p>
+      </div>
+      <div class="about-card bg-green-100 p-6 rounded shadow opacity-0 translate-y-10 transition duration-500">
+        <h4 class="text-xl font-bold mb-2">Our Values</h4>
+        <p class="text-gray-700">We value creativity, sustainability, and community.</p>
+      </div>
+      <div class="about-card bg-green-100 p-6 rounded shadow opacity-0 translate-y-10 transition duration-500">
+        <h4 class="text-xl font-bold mb-2">Our Commitment</h4>
+        <p class="text-gray-700">To constantly improve and bring you the best tools for cooking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-gray-800 text-white py-4 mt-6 fixed bottom-0 w-full">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
+    </div>
+</footer>
+
+  <script src="about.js"></script>
+</body>
+</html>
