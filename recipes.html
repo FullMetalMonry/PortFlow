@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/302ad94fc2.js" crossorigin="anonymous"></script>
+    <title>Recipes</title>
 </head>
 <body>
-    <header class="bg-green-500 text-white shadow">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 class="font-fredoka text-2xl">Recipe Finder</h1>
-          <h1 class="font-fredoka text-3xl text-center ">Search And Cook!</h1>
-          <nav>
-            <ul class="flex space-x-6">
-            <li><a href="index.html" title="Home" class="hover:text-gray-200"><i class="fa-solid fa-house-chimney" ></a></i></li>
-            <li><a href="about.html" title="About" class="hover:text-gray-200"><i class="fa-solid fa-address-card"></i></a></i></li>
-            <li><a href="" title="Recipes" class="hover:text-gray-200"><i class="fa-solid fa-utensils"></i></a></li>
-          </ul>
-          </nav>
-        </div>
+    <header class="bg-green-500 text-white shadow mb-6">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="font-fredoka text-2xl">Recipe Finder</h1>
+        <h1 class="font-fredoka text-3xl mr-28">Search And Cook!</h1>
+        <a href="index.html" title="Home" class="hover:text-gray-200"><i class="fa-solid fa-house-chimney text-2xl" ></a></i>
+      </div>
       </header>
-    
+      <h1 class="text-3xl font-bold text-center mb-6">Recipes Of The Day!</h1>
+      <div class="grid grid-cols-4 gap-4 m-auto">
+      <h1 class="text-2xl font-bold ml-28">Breakfast</h1>
+        <h1 class="text-2xl font-bold ml-32">Lunch</h1>
+        <h1 class="text-2xl font-bold ml-32">Dinner</h1>
+        <h1 class="text-2xl font-bold ml-32">Dessert</h1>
+      </div>  
+      <div class="mt-2 grid grid-cols-4 gap-4 m-auto mb-44">
+      <a href="blini.html"><img id="anim" class="m-auto rounded-lg w-64 h-56 border-solid border-8 border-green-500" src="https://www.themealdb.com/images/media/meals/0206h11699013358.jpg"></a>
+      <a href="lunch.html"><img class="m-auto rounded-lg w-64 h-56 border-solid border-8 border-green-500" src="https://www.themealdb.com/images/media/meals/7n8su21699013057.jpg"></a>
+      <a href="dinner.html"><img class="m-auto rounded-lg w-64 h-56 border-solid border-8 border-green-500" src="https://www.themealdb.com/images/media/meals/qtuwxu1468233098.jpg"></a>
+      <a href="dessert.html"><img class="m-auto rounded-lg w-64 h-56 border-solid border-8 border-green-500" src="https://www.themealdb.com/images/media/meals/oe8rg51699014028.jpg">
+      </div>
+
+
+
+    <footer class="bg-gray-800 text-white py-4 fixed bottom-0 w-full">
+      <div class="container m text-center">
+        <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
+      </div>
+    </footer>
+
 </body>
 </html>
